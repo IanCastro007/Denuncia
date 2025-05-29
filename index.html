@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecadastrinho.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+    <title>cadastrin</title>
+
+</head>
+<body>
+      <header>
+    <img src="logo-antimisoginia.png" alt="Logo Juventudes Antimisoginia" class="logo">
+    <nav>
+      <a href="#inicio" onclick="window.location.href='https://iancastro007.github.io/apos/'">Voltar</a>
+    </nav>
+  </header>
+
+  <div class="denuncia-container">
+    <div class="denuncia-box">
+        <h3>Formulário de Denúncia</h3>
+        
+        <!-- AVISO DE ANONIMATO -->
+        <div class="aviso-anonimato">
+            
+            <h4><img src="https://img.icons8.com/?size=100&id=2862&format=png&color=000000" alt="Ícone de cadeado" class="icone-cadeado">Seu anonimato está protegido</h4>
+            <p>Esta denúncia é <strong>totalmente anônima</strong>. As únicas pessoas que terão acesso são:</p>
+            <ul>
+                <li>Diretora da escola</li>
+                <li>Coordenadora responsável</li>
+                <li>Equipe especializada do projeto</li>
+            </ul>
+            <p class="destaque-vermelho">Nenhuma informação pessoal será compartilhada com outras pessoas.</p>
+        </div>
+
+        <form class="form-denuncia">
+            <!-- Campos opcionais -->
+            <div class="form-group">
+                <label for="nome-completo">Nome Completo (opcional):</label>
+                <input type="text" id="nome-completo" placeholder="Pode deixar em branco para anonimato">
+            </div>
+            
+            <!-- Campos obrigatórios -->
+            <div class="form-group">
+                <label for="sala">Sala/Ocorrência:</label>
+                <input type="text" id="sala" placeholder="Ex.: 2A, 3B, FabLab 1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="dia">Dia:</label>
+                <input type="date" id="dia" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="denuncia">Denúncia:</label>
+                <textarea id="denuncia" placeholder="Descreva detalhadamente o ocorrido (quanto mais informações, melhor podemos ajudar)..." rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-enviar">Enviar Denúncia</button>
+        </form>
+    </div>
+</div>
+
+      <footer>
+    <div class="footer-container">
+      <h3>Portal de Denúncia Anti-Misoginia</h3>
+      <p>Se presenciar ou sofrer qualquer tipo de misoginia, não se cale. Denuncie.</p>
+
+      <div class="footer-info">
+        <p><strong>Contato:</strong> (11) 4723-6900</p>
+        <p><strong>Local:</strong> SESI Mogi das Cruzes</p>
+        <p><strong>E-mail:</strong> <a href="mailto:sumogcruzes@sesisp.org.br">sumogcruzes@sesisp.org.br</a></p>
+      </div>
+
+      <div class="footer-credits">
+        <p>© Direitos reservados a Gustavo Neco de Castro e Ian Oliveira de Castro</p>
+        <p><strong>Política de Privacidade:</strong> Todas as denúncias são tratadas com sigilo absoluto.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</body>
+</html>
